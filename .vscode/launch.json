@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:tokamak_app}",
+      "name": "Debug tokamak_app",
+      "program": "${workspaceFolder:tokamak_app}/.build/debug/tokamak_app",
+      "preLaunchTask": "swift: Build Debug tokamak_app"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:tokamak_app}",
+      "name": "Release tokamak_app",
+      "program": "${workspaceFolder:tokamak_app}/.build/release/tokamak_app",
+      "preLaunchTask": "swift: Build Release tokamak_app"
+    }
+  ]
+}
